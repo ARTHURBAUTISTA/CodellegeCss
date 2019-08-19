@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: #f2f2f2;
+}
+
+section {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* img {
+    width: 20px;
+} */
+
+h1 {
+    width: 50%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container>div {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+}
+
+.container>div div {
+    width: 30%;
+    height: 80%;
+    position: relative;
+    cursor: pointer;
+}
+
+.container>div div img {
+    width: 100%;
+    height: 100%;
+}
+
+.container>div div span {
+    position: absolute;
+    color: white;
+    /* left: calc(50% - (68.89px /2)); */
+    top: calc(50% - (18.89px /2));
+    font-size: 30px;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+
+.container>div div:hover span {
+    display: block;
+}
+
+.container>div div:after {
+    content: '';
+    /* background: black; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.container>div div:hover:after {
+    background: rgba(3, 3, 3, .5);
+    transition: 1s linear;
+}

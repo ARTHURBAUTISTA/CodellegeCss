@@ -1,0 +1,73 @@
+                                            body {
+                                                margin: 0;
+                                                padding: 0;
+                                                width: 100%;
+                                                height: 100vh;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                            
+                                            .contenedor {
+                                                width: 90%;
+                                                height: 90%;
+                                                background: dodgerblue;
+                                                position: relative;
+                                            }
+                                            
+                                            .cuadrito {
+                                                width: 70px;
+                                                height: 70px;
+                                                /* background: rgb(255, 71, 230); */
+                                                background-image: url(/imagenes/icono.png);
+                                                position: absolute;
+                                                animation: recorrido 30s linear infinite;
+                                                border-radius: 50px;
+                                            }
+                                            
+                                            @keyframes recorrido {
+                                                0% {
+                                                    top: calc(0%);
+                                                    left: calc(0%);
+                                                }
+                                                10% {
+                                                    top: calc(10%);
+                                                    left: calc(95%);
+                                                }
+                                                20% {
+                                                    top: calc(20%);
+                                                    left: calc(0%);
+                                                }
+                                                30% {
+                                                    top: calc(30%);
+                                                    left: calc(95%);
+                                                }
+                                                40% {
+                                                    top: calc(40%);
+                                                    left: calc(0%);
+                                                }
+                                                50% {
+                                                    top: calc(50%);
+                                                    left: calc(95%);
+                                                }
+                                                60% {
+                                                    top: calc(60%);
+                                                    left: calc(0%);
+                                                }
+                                                70% {
+                                                    top: calc(70%);
+                                                    left: calc(95%);
+                                                }
+                                                80% {
+                                                    top: calc(80%);
+                                                    left: calc(0%);
+                                                }
+                                                90% {
+                                                    top: calc(90%);
+                                                    left: calc(95%);
+                                                }
+                                                100% {
+                                                    top: calc(100% - 85px);
+                                                    left: calc(0%);
+                                                }
+                                            }
